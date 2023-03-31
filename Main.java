@@ -8,6 +8,7 @@ public class Main {
         switch (ejer.nextInt()) {
             case 1 -> ejercicio1();
             case 2 -> ejercicio2();
+            case 3 -> ejercicio3();
         }
     }
     public static void ejercicio1(){
@@ -77,5 +78,8 @@ public class Main {
             }
         }
     return total;
+    }
+    public static void ejercicio3(){
+
     }
 }

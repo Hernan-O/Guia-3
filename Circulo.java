@@ -33,10 +33,18 @@ public class Circulo{
         return area;
     }*/
     public float calcularArea(float altura){
-        float area = (float)(((2*Math.PI)*getRadio()*altura)+2*(getRadio()*getRadio()));
+        float area = (float)(((2*Math.PI)*getRadio())*(getRadio()+altura));
         return area;
     }
     public void mostrarCaracteristicas(){
         System.out.println("El circulo tiene un radio de:"+this.getRadio()+"\nEl circulo es de color: "+this.getColor());
+    }
+
+    @Override
+    public String toString() {
+        return "Circulo{" +
+                "radio=" + radio +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
