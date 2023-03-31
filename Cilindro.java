@@ -1,5 +1,7 @@
 package Guia3;
 
+import static java.lang.Math.*;
+
 public class Cilindro extends Circulo{
     private float altura;
 
@@ -15,10 +17,12 @@ public class Cilindro extends Circulo{
         altura = 1;
     }
     public float volumen(){
-        float volu =(float)((this.getRadio()*2)*(this.getAltura())*(3.14));
-        return volu;
+        return (super.calcularArea(this.getAltura()));
     }
     public void mostrarCilindro(){
         System.out.println("El radio del cilindro es:"+this.getRadio()+"\nEl color del cilindro es:"+this.getColor()+"\nLa altura del cilindro es:"+this.getAltura());
+    }
+    public void subClase(){
+        System.out.println("Subclase de: "+ toString() +" de Circulo + Altura: "+getAltura());
     }
 }

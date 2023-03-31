@@ -1,5 +1,7 @@
 package Guia3;
 
+import static java.lang.Math.*;
+
 public class Circulo{
     private float radio;
 
@@ -26,8 +28,12 @@ public class Circulo{
         this.color = "Rojo";
     }
 
-    public float calcularArea(){
+    /*public float calcularArea(){
         float area = (float)((this.radio*this.radio)*(3.14));
+        return area;
+    }*/
+    public float calcularArea(float altura){
+        float area = (float)(((2*Math.PI)*getRadio()*altura)+2*(getRadio()*getRadio()));
         return area;
     }
     public void mostrarCaracteristicas(){
