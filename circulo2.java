@@ -2,16 +2,8 @@ package Guia3;
 
 import static java.lang.Math.*;
 
-public class Circulo{
+public class circulo2 extends Figuras{
     private float radio;
-
-    @Override
-    public String toString() {
-        return "Circulo{" +
-                "radio=" + radio +
-                ", color='" + color + '\'' +
-                '}';
-    }
 
     public float getRadio() {
         return radio;
@@ -31,13 +23,12 @@ public class Circulo{
 
     private String color;
 
-    public Circulo(){
+    public circulo2(){
         this.radio = 1;
         this.color = "Rojo";
     }
-    public float calcularArea(float altura){
-        float area = (float)(((2*Math.PI)*getRadio()*altura)+2*(getRadio()*getRadio()));
-        return area;
+    public float calcularAreaCirculo(){
+        return (float) ((float)Math.PI*(this.getRadio()*this.getRadio()));
     }
     public void mostrarCaracteristicas(){
         System.out.println("El circulo tiene un radio de:"+this.getRadio()+"\nEl circulo es de color: "+this.getColor());

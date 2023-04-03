@@ -23,6 +23,6 @@ public class Cilindro extends Circulo{
         System.out.println("El radio del cilindro es:"+this.getRadio()+"\nEl color del cilindro es:"+this.getColor()+"\nLa altura del cilindro es:"+this.getAltura());
     }
     public void subClase(){
-        System.out.println("Subclase de: "+ super.toString() +" de Circulo + Altura: "+getAltura());
+        System.out.println("Subclase de: "+ toString() +" de Circulo + Altura: "+getAltura());
     }
 }

@@ -80,6 +80,10 @@ public class Main {
     return total;
     }
     public static void ejercicio3(){
-
+        circulo2 romancito = new circulo2();
+        romancito.setColor("Verde");
+        romancito.setRadio(150);
+        float radioRomancito = romancito.calcularAreaCirculo();
+        System.out.println("area:"+radioRomancito);
     }
 }
